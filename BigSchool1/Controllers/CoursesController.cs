@@ -1,5 +1,4 @@
 ﻿using BigSchool1.Models;
-using BigSchool1.View.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,11 +18,9 @@ namespace BigSchool1.Controllers
         // GET: Courses
         public ActionResult Create()
         {
-            var viewModel = new CourseViewModel
-            {
-                Categories = _dbContext.Categories.ToList()
-            };
-            return View(viewModel);
+           
+            return View();
         }
+       
     }
 }

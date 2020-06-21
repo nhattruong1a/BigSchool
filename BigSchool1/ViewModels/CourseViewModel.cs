@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BigSchool1.View.ViewModel
+namespace BigSchool1.ViewModels
 {
     public class CourseViewModel
     {
@@ -19,5 +19,6 @@ namespace BigSchool1.View.ViewModel
         {
             return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
+
     }
 }

@@ -12,9 +12,8 @@ namespace BigSchool1.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<Category> Categories { get; set; }
         public ApplicationDbContext()
-            :base("DefaultConnection",throwIfV1Schema : false)
+            :base("DefaultConnection", throwIfV1Schema : false)
         {
-
         }
         public static ApplicationDbContext Create()
         {
