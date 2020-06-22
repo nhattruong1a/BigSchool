@@ -26,8 +26,9 @@ namespace BigSchool1.ViewModels1
             return DateTime.Parse(string.Format("{0} {1}",Date,Time));
         }
 
-        private class FutureDateAttribute : Attribute
+        private class FutureDateAttribute : ValidationAttribute
         {
+
         }
     }
 }

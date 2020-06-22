@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Linq;
 using System.Web;
 
 namespace BigSchool1.ViewModels1
 {
-    public class FutureDate : ValidationAttribute
+    public class FutureDate : ValidationAttribute 
     {
-        public override bool IsValid(object value)
+        public override bool IsValid (object value)
         {
             DateTime dateTime;
             var isValid = DateTime.TryParseExact(Convert.ToString(value),
@@ -19,8 +20,9 @@ namespace BigSchool1.ViewModels1
             return (isValid && dateTime > DateTime.Now);
         }
     }
+
+ }
        
     
 
     
-}
